@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .title {
+            color: red;
+            font-size: 35px;
+        }
+
+        .vt {
+            writing-mode: vertical-rl;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .inner-table {
+            width: 100%;
+            max-width: 100%;
+            border-collapse: collapse;
+        }
+
+        .title-color {
+            background-color: aqua;
+        }
+
+        .section {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: gainsboro;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .last {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .message-box {
+
+            padding: 60px;
+
+        }
+
+        .message-box2 {
+            width: 100px;
+            padding: 70.5px;
+            text-align: center;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .lt-table {
+            float: left;
+            width: 35%;
+        }
+
+        .rt-table {
+            float: right;
+            width: 65%;
+
+        }
+
+        .rt-table td {
+            height: 21.7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="one">
+        <tr>
+            <th colspan="6" class="title-color">
+                <div class="title">교과목 평가표(예시)</div>
+            </th>
+        </tr>
+        <tr>
+            <td><strong>과정명</strong></td>
+            <td colspan="3">빅데이터 기반(파이썬·자바·웹) 엘라스틱 검색엔진 개발자</td>
+        </tr>
+        <tr>
+            <td><strong>훈련기간</strong></td>
+            <td>2025. 01. 15 ~ 2025. 07. 10</td>
+            <td><strong>강사</strong></td>
+            <td>권상구</td>
+        </tr>
+        <tr>
+            <td><strong>교과목</strong></td>
+            <td>HTML5&JavaScript</td>
+            <td><strong>훈련생</strong></td>
+            <td>장동환</td>
+        </tr>
+    </table>
+
+    <table class="inner-table">
+        <tr>
+            <th colspan="6">
+                <div class="section">평가 문항</div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <table class="inner-table">
+                    <tr>
+                        <th colspan="5">IT 시간표</th>
+                    </tr>
+                    <tr>
+                        <td>시간</td>
+                        <td>401호</td>
+                        <td>402호</td>
+                        <td>403호</td>
+                        <td>404호</td>
+                    </tr>
+                    <tr>
+                        <td>09:00-12:00</td>
+                        <td rowspan="4" class="vt">공사중</td>
+                        <td rowspan="2">네트워크보안</td>
+                        <td>실무자 양성</td>
+                        <td>보충훈련 과정 (OS/네트워크)</td>
+                    </tr>
+                    <tr>
+                        <td>12:30-15:30</td>
+                        <td>JAVA</td>
+                        <td>보충훈련 과정 (언어계열)</td>
+                    </tr>
+                    <tr>
+                        <td>15:30-18:30</td>
+                        <td>C언어</td>
+                        <td rowspan="2">가상화 시스템 엔지니어 실무자 양성</td>
+                        <td>리눅스</td>
+                    </tr>
+                    <tr>
+                        <td>19:00-22:00</td>
+                        <td>PYTHON_WEB</td>
+                        <td>서버</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>위의 그림을 참고해서 HTML을 사용하여 구현한다.</p>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="5">
+                <div class="section">답안 링크</div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p><a href="https://github.com/rulrulralral/exam_html">깃허브</a></p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="inner-table">
+        <tr>
+            <th colspan="6">
+                <div class="section">평가 결과</div>
+            </th>
+        </tr>
+    </table>
+
+    <div class="clearfix">
+        <table class="lt-table">
+            <tr>
+                <td>No.</td>
+                <td>평가 항목(배점)</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>가독성</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>작성력</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>기술 적용도</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>완성도</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>훈련 강사의 정성평가</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="message-box">*피드백</div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="rt-table">
+            <tr>
+                <th colspan="5">평가 항목(배점)</th>
+            </tr>
+            <tr>
+                <td><strong>최상(25)</strong></td>
+                <td><strong>상(20)</strong></td>
+                <td><strong>중(15)</strong></td>
+                <td><strong>중하(10)</strong></td>
+                <td><strong>최하(5)</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="message-box2"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="last">
+        <tr>
+            <th class="section">총점</th>
+        </tr>
+    </table>
+
+    <table class="last">
+        <tr>
+            <td>0</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
